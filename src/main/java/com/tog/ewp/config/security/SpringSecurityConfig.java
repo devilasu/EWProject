@@ -35,7 +35,7 @@ public class SpringSecurityConfig{
 	@Bean
 	public SecurityFilterChain configure(HttpSecurity http) throws Exception{
 		http
-		.authorizeRequests()
+		.authorizeHttpRequests()
 		.anyRequest().permitAll();
 		return http.build();
 	}
