@@ -1,0 +1,16 @@
+
+# server
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+# view
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
