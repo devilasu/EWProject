@@ -12,7 +12,7 @@ tmp/
 local.properties
 .loadpath
 .recommenders
-.gradle
+.gradle/
 
 # External tool builders
 .externalToolBuilders/
