@@ -9,71 +9,86 @@
 <!-- 전체 크기 -->
 <div id="wrap" class="wrap">
 
-<!-- id/password 포스트 +헤드라인 -->
-	<div class="area1" 	>
-		<div id="id" > id</div>
-	</div>
-<!-- id/password 포스트 +헤드라인 -->
-	<div class="area2" 	>
-		<div id="password" > password</div>
+	<div id="login" class="login">
+	<!-- id/password 포스트 +헤드라인 -->
+		<div class="area1" 	>
+			<div id="id" > id</div>
+			<input type ="text">
+		</div>
+	<!-- id/password 포스트 +헤드라인 -->
+		<div class="area2" 	>
+			<div id="password" > password</div>
+			<div id="password_box" class="passwordpost"></div>
+		</div>
 	</div>
 
-<!-- 핫게시물 포스트+헤드라인 -->
-	<div class="area">
-		<div id="hotpost">핫 게시물</div>
-		<div id="hotpost_box" class="post"></div>	
-	</div>
-	
-<!-- 공지사항 포스트+헤드라인 -->
+
+	<div id="Posting" class="Posting">
+	<!-- 핫게시물 포스트+헤드라인 -->
 		<div class="area">
-		<div id="announcement"> 공지사항</div>
-		<div id="announcement_box" class="post"></div>
-	</div>
+			<div id="hotpost">핫 게시물</div>
+			<div id="hotpost_box" class="post"></div>	
+		</div>
 	
-<!-- 공백 포스트+헤드라인 -->
-	<div class="area">
-		<div id="undefined">공백</div>
-		<div id="undefined_box" class="post"></div>
-	</div>
+	<!-- 공지사항 포스트+헤드라인 -->
+		<div class="area">
+			<div id="announcement"> 공지사항</div>
+			<div id="announcement_box" class="post"></div>
+		</div>
 	
-<!-- 친구 게시물 포스트+헤드라인 -->
-	<div class="area">
-		<div id="friendpost"> 친구 게시물</div>
-		<div id="friendpost_box" class="post"></div>
+	<!-- 공백 포스트+헤드라인 -->
+		<div class="area">
+			<div id="undefined">공백</div>
+			<div id="undefined_box" class="post"></div>
+		</div>
+	
+	<!-- 친구 게시물 포스트+헤드라인 -->
+		<div class="area">
+			<div id="friendpost"> 친구 게시물</div>
+			<div id="friendpost_box" class="post"></div>
+		</div>
+		</div>
 	</div>
-
-</div>
 </body>
 <style type = "text/css">
 
 div{
 	border: 3px solid;
+	posItion: relative;
 }
 
 /* 전체 범위*/
 div.wrap{
 	width:100%;
-	height:600px;
 }
-
+div .login{
+	width:39%;
+	height:40px;
+	left: 60%;
+}
 /* id 범위*/
 div .area1{
 	display: inline-block;
-	width: 10%;
+	width: 40%;
 	height: 20px;	
-	posItion: relative;
-	top:-100px;
-	left:450px;
 }
+
+
 
 /* password 범위*/
 div .area2{
 	display: inline-block;
-	width: 10%;
+	width: 40%;
 	height: 20px;	
-	posItion: relative;
-	top:-100px;
-	left:500px;
+	margin: 5px;
+	
+}
+
+
+
+div .Posting{
+	width:100%;
+	height:500px;
 }
 
 /* 헤드라인+게시물 범위*/
@@ -81,9 +96,8 @@ div .area{
 	display: inline-block;
 	width: 40%;
 	height: 170px;
-	margin: 25px;
-	posItion: relative;
-	top:120px;
+	margin: 20px;
+	top:20px;
 	left:10px;
 	text-align : center;
 }
@@ -91,7 +105,6 @@ div .area{
 
 /* 게시물 범위*/
 div .post{
-	display: inline-block;
 	width:	90%;
 	margin: 10px;
 	height: 100px;
