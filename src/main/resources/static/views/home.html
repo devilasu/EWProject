@@ -2,24 +2,51 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css
+" rel="stylesheet">
 <title>Insert title here</title>
+
 </head>
 <body>
+<script>
+	$(function(){
+		$("#loginBtn").click(function(){
+			location.href="test";
+		});
+	});
 
+	document.addEventListener('keydown', (event)=>{
+		if(event.code == "NumpadEnter"){
+			console.log("패드엔터");
+		}else if(event.code == "Enter"){
+			console.log("엔터");
+		}
+	});
+</script>
 <!-- 전체 크기 -->
 <div id="wrap" class="wrap">
 	<!-- 로그인 영역 -->
 	<div id="login" class="login">
-	<!-- id/password 포스트 +헤드라인 -->
+		<!-- id/password 포스트 +헤드라인 -->
 		<div class="area1" 	>
 			<div id="idLabel" class="idLabel"> ID</div>
 			<input type ="text" class="idText">
 		</div>
-	<!-- id/password 포스트 +헤드라인 -->
+		<!-- id/password 포스트 +헤드라인 -->
 		<div class="area2" 	>
 			<div id="pwLabel" class="pwLabel" > PASSWORD</div>
 			<input type ="text" class="pwText">
 		</div>
+		<input id= "loginBtn" type="button" value="로그인">
+	</div>
+	
+	<div id="nav" class="nav">
+		<div id="menu" class="menu">네비게이션 바를 위한 메뉴 목록</div>
 	</div>
 
 	<div id="Posting" class="Posting">
@@ -69,6 +96,7 @@ div{
 }
 /* id 범위*/
 .area1{
+	margin:5px;
 	display: inline-block;
 	width: 40%;
 }
@@ -103,7 +131,8 @@ div{
 
 .Posting{
 	width:100%;
-	height:500px;
+	height:600px;
+	text-align: center;
 }
 
 /* 헤드라인+게시물 범위*/
