@@ -16,7 +16,7 @@ public class MainController {
 	
 	@GetMapping("/test")
 	public String testPage() {
-		String txt = "¹Ì°æ¾Æ »ç¶ûÇØ";
+		String txt = "ì—¬ë³´ì•¼ ì‚¬ëž‘í•´";
 		return "test";
 	}
 }
