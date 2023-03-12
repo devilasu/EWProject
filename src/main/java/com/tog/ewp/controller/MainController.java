@@ -13,4 +13,10 @@ public class MainController {
 	public String homePage() {
 		return "home";
 	}
+	
+	@GetMapping("/test")
+	public String testPage() {
+		String txt = "미경아 사랑해";
+		return "test";
+	}
 }
